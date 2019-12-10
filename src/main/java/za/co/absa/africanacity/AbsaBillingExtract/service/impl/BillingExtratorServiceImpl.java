@@ -33,9 +33,9 @@ public class BillingExtratorServiceImpl implements BillingExtratorService {
     public static final String SIMPLE_DATE_FORMAT = "yyyyMMdd";
     public static final String SERVICE_NAME = "SRVNAME";
     public static final String SUB_SERVICE_NAME = "SSNME";
-    public static final String BASE_URL = "http://localhost:7654/file";
+    public static final String BASE_URL = "http://localhost:7555/file";
     public static final String TEMP_DIR = "java.io.tmpdir";
-    public static final String FILE_NAME = "billing_extract";
+    public static final String FILE_NAME = "billing_extract_";
     public static final String FILE_EXT = ".txt";
 
     @Autowired
@@ -43,14 +43,13 @@ public class BillingExtratorServiceImpl implements BillingExtratorService {
 
 
     @Override
-    public void extract() throws IOException, FFPojoException, ParseException {
+    public void extract(String firstBusinessWorkingDay) throws IOException, FFPojoException, ParseException {
 
-        log.info(BillingExtratorServiceImpl.SERVICE_NAME.concat("Billing Extract Process Started...."));
+        log.info(BillingExtratorServiceImpl.SERVICE_NAME.concat(" - Billing Extract Process Started...."));
         File file = new File(System.getProperty(TEMP_DIR).concat(FILE_NAME.concat(new SimpleDateFormat(SIMPLE_DATE_FORMAT).format(new Date())).concat(FILE_EXT)));
         List<Billing> billingList = repository.findAll();
 
-        log.info("About to create file extract " + file.getAbsolutePath());
-        BillingRecordFileWriter.createBilingExtractFile(file, billingList, SERVICE_NAME, SUB_SERVICE_NAME);
+        BillingRecordFileWriter.createBilingExtractFile(file, billingList, SERVICE_NAME, SUB_SERVICE_NAME, firstBusinessWorkingDay);
 
         BasicHttpContext localContext = new BasicHttpContext();
         HttpClient httpClient = HttpClientBuilder.create().build();
@@ -66,6 +65,7 @@ public class BillingExtratorServiceImpl implements BillingExtratorService {
                 .header("Content-Disposition", contentDisposition)
                 .post(Entity.entity(fileInStream, MediaType.APPLICATION_OCTET_STREAM)).getStatus();
 
+        log.info("EXTRACT CREATED " + file.getAbsolutePath());
         log.info("Status " + status);
     }
 }

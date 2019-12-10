@@ -1,4 +1,6 @@
 za\co\absa\africanacity\AbsaBillingExtract\domain\BillingFileRecord.class
+za\co\absa\africanacity\AbsaBillingExtract\util\AbsaDateUtil.class
+za\co\absa\africanacity\AbsaBillingExtract\util\AbsaDateUtil$Holiday.class
 za\co\absa\africanacity\AbsaBillingExtract\util\BillingRecordFileWriter.class
 za\co\absa\africanacity\AbsaBillingExtract\domain\Billing.class
 za\co\absa\africanacity\AbsaBillingExtract\AbsaBillingExtractorApplication.class

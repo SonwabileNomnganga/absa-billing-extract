@@ -6,5 +6,5 @@ import java.io.IOException;
 import java.text.ParseException;
 
 public interface BillingExtratorService {
-    void extract() throws IOException, FFPojoException, ParseException;
+    void extract(String firstBusinessWorkingDay) throws IOException, FFPojoException, ParseException;
 }
