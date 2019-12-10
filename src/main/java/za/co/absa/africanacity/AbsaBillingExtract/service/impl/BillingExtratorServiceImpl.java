@@ -34,6 +34,9 @@ public class BillingExtratorServiceImpl implements BillingExtratorService {
     @Autowired
     private BillingRepository repository;
 
+    @Autowired
+    private AbsaFileUploadUtil absaFileUploadUtil;
+
 
     @Override
     public void extract(String firstBusinessWorkingDay) throws IOException, FFPojoException, ParseException {
@@ -54,7 +57,7 @@ public class BillingExtratorServiceImpl implements BillingExtratorService {
 
         log.info("EXTRACT CREATED " + file.getAbsolutePath());
 
-        Response response = AbsaFileUploadUtil.uploadFile(file, BASE_URL);
+        Response response = absaFileUploadUtil.uploadFile(file, BASE_URL);
 
         log.info("Status " + response.getStatus());
     }

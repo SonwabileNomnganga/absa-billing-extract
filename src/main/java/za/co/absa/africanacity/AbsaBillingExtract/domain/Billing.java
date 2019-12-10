@@ -1,9 +1,6 @@
 package za.co.absa.africanacity.AbsaBillingExtract.domain;
 
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.NonNull;
-import lombok.Setter;
+import lombok.*;
 import org.joda.time.DateTime;
 
 import javax.persistence.*;
@@ -12,6 +9,7 @@ import java.io.Serializable;
 @Getter
 @Setter
 @NoArgsConstructor
+@RequiredArgsConstructor
 @Entity
 @Table(name = "billing")
 public class Billing implements Serializable {

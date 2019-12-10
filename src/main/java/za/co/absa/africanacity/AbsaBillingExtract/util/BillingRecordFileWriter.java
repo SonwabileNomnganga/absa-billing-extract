@@ -24,44 +24,12 @@ public class BillingRecordFileWriter {
 
         file.createNewFile();
         BufferedWriter textFileWriter = new BufferedWriter(new FileWriter(file));
-        for(Billing billing: billingList){
+        for(Billing billing: billingList){ //TODO filter the month, only should be last month
 
             String line = ffpojo.parseToText(new BillingFileRecord(billing.getClientSwiftAddress(), serviceName, subServiceName, firstBusinessWorkingDay.replace("-", ""), billing.getMessageStatus()));
             textFileWriter.write(line);
             textFileWriter.newLine();
         }
         textFileWriter.close();
-
-
-        /*FFPojoHelper ffpojo = FFPojoHelper.getInstance();
-
-        file.createNewFile();
-        BufferedWriter textFileWriter = new BufferedWriter(new FileWriter(file));
-        billingList
-                .parallelStream()
-                .filter(b -> {
-                    if (StringUtils.isNotBlank(b.getMessageStatus())) {
-                        return true;
-                    }
-                    return false;
-                })
-                .collect(Collectors.toList())
-                .parallelStream()
-        .filter(c -> {
-            if (StringUtils.isNotBlank(c.getMessageStatus())) { //TODO filter by date
-                try {
-                    textFileWriter.write(ffpojo.parseToText(new BillingFileRecord(c.getClientSwiftAddress(), serviceName, subServiceName, firstBusinessWorkingDay.replace("-", ""), c.getMessageStatus())));
-                    textFileWriter.newLine();
-                } catch (FFPojoException e) {
-                    e.printStackTrace();
-                } catch (IOException e) {
-                    e.printStackTrace();
-                }
-                return true;
-            }
-            return false;
-        });
-        textFileWriter.close();*/
-
     }
 }

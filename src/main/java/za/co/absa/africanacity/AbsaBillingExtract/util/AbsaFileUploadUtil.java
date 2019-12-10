@@ -6,6 +6,7 @@ import org.apache.http.protocol.BasicHttpContext;
 import org.jboss.resteasy.client.jaxrs.ResteasyClient;
 import org.jboss.resteasy.client.jaxrs.ResteasyClientBuilder;
 import org.jboss.resteasy.client.jaxrs.engines.ApacheHttpClient4Engine;
+import org.springframework.stereotype.Component;
 
 import javax.ws.rs.client.Entity;
 import javax.ws.rs.core.MediaType;
@@ -15,9 +16,10 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.InputStream;
 
+@Component
 public class AbsaFileUploadUtil {
 
-    public static Response uploadFile(File file, String BASE_URL) throws FileNotFoundException {
+    public Response uploadFile(File file, String BASE_URL) throws FileNotFoundException {
         BasicHttpContext localContext = new BasicHttpContext();
         HttpClient httpClient = HttpClientBuilder.create().build();
         ApacheHttpClient4Engine engine = new ApacheHttpClient4Engine(httpClient, localContext);

@@ -22,12 +22,15 @@ public class AbsaBillingSchedular {
 
     /**
      * Scheduled(cron = "0 0 7 1 * ?")
-     * The cron value above would start the the scheduler at 7:00 am on 1ST day of every month. Because the cron does not
+     *
+     *
+     * The cron value above would make the scheduler start at 7:00 am on 1ST day of every month, as per the requirement. Because the cron does not
      * know of holidays and weekends, the java code was added as a extra to make sure that the billing extract date recorded on the file is the legitimate
      * next business working day. To explain that see the discussion below as there will be different conditions to look for, e.g.
      *  if the scheduler is triggered on,
      *
-     * 1. 01-11-2019 is on Friday, which is the first legitimate business day. 01112019 gets recorded to the file.
+     * 1. 01-11-2019 is on Friday, which is the first legitimate business day. The first business working day recorded will be
+     * the very same day, i.e. the 1st of November 2019.
      *
      * 2. 01-06-2019 is on Saturday there we cannot record that as the first business working day. That therefore makes the first business
      * working day Monday the 3rd of June 2019 and we need to record that.
@@ -44,6 +47,7 @@ public class AbsaBillingSchedular {
      *
      * @throws Exception
      */
+    /*scheduler cron value for demonstration purposes. The value that was supposed to be used is the one above, i.e. cron = "0 0 7 1 * ?", which makes is run every 1st day of the month*/
     @Scheduled(cron = "0 48 13 * * *")
     public void schedule() throws Exception{
 
