@@ -18,7 +18,7 @@ public class BillingRecordFileWriter {
 
     public static final String SIMPLE_DATE_FORMAT = "yyyyMMdd";
 
-    public static void createBilingExtractFile(File file, List<Billing> billingList, String serviceName, String subServiceName, String firstBusinessWorkingDay) throws IOException, FFPojoException, ParseException {
+    public static void createBillingExtractFile(File file, List<Billing> billingList, String serviceName, String subServiceName, String firstBusinessWorkingDay) throws IOException, FFPojoException, ParseException {
 
         FFPojoHelper ffpojo = FFPojoHelper.getInstance();
 

@@ -2,28 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7d08b54a-6eea-4f26-a488-4f79b3f4e0d1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_9.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/za/co/absa/africanacity/AbsaBillingExtract/util/AbsaDateUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/TestCheckFirstBusinessDay.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/za/co/absa/africanacity/AbsaBillingExtract/util/AbsaFileUploadUtil.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/absa-billing-extract.iml" beforeDir="false" afterPath="$PROJECT_DIR$/absa-billing-extract.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/za/co/absa/africanacity/AbsaBillingExtract/schedular/AbsaBillingSchedular.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/za/co/absa/africanacity/AbsaBillingExtract/schedular/AbsaBillingSchedular.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/za/co/absa/africanacity/AbsaBillingExtract/service/BillingExtratorService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/za/co/absa/africanacity/AbsaBillingExtract/service/BillingExtratorService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/za/co/absa/africanacity/AbsaBillingExtract/service/impl/BillingExtratorServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/za/co/absa/africanacity/AbsaBillingExtract/service/impl/BillingExtratorServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/za/co/absa/africanacity/AbsaBillingExtract/util/BillingRecordFileWriter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/za/co/absa/africanacity/AbsaBillingExtract/util/BillingRecordFileWriter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/absa-billing-extract-0.0.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/absa-billing-extract-0.0.1-SNAPSHOT.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/absa-billing-extract-0.0.1-SNAPSHOT.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/target/absa-billing-extract-0.0.1-SNAPSHOT.jar.original" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/data.sql" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/data.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/za/co/absa/africanacity/AbsaBillingExtract/schedular/AbsaBillingSchedular.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/za/co/absa/africanacity/AbsaBillingExtract/schedular/AbsaBillingSchedular.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/za/co/absa/africanacity/AbsaBillingExtract/service/BillingExtratorService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/za/co/absa/africanacity/AbsaBillingExtract/service/BillingExtratorService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/za/co/absa/africanacity/AbsaBillingExtract/service/impl/BillingExtratorServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/za/co/absa/africanacity/AbsaBillingExtract/service/impl/BillingExtratorServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/za/co/absa/africanacity/AbsaBillingExtract/util/BillingRecordFileWriter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/za/co/absa/africanacity/AbsaBillingExtract/util/BillingRecordFileWriter.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-TestCheckFirstBusinessDay.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-TestCheckFirstBusinessDay.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TestCheckFirstBusinessDay.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TestCheckFirstBusinessDay.txt" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/classes/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -56,11 +48,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/za/co/absa/africanacity/AbsaBillingExtract/schedular/AbsaBillingSchedular.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="236">
-              <caret line="47" column="27" selection-start-line="47" selection-start-column="27" selection-end-line="47" selection-end-column="27" />
+            <state relative-caret-position="301">
+              <caret line="52" column="19" lean-forward="true" selection-start-line="52" selection-start-column="19" selection-end-line="52" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -98,11 +90,23 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/za/co/absa/africanacity/AbsaBillingExtract/service/impl/BillingExtratorServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="80">
-              <caret line="51" column="43" lean-forward="true" selection-start-line="51" selection-start-column="43" selection-end-line="51" selection-end-column="43" />
+            <state relative-caret-position="325">
+              <caret line="55" column="75" selection-start-line="55" selection-start-column="75" selection-end-line="55" selection-end-column="75" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/za/co/absa/africanacity/AbsaBillingExtract/util/AbsaFileUploadUtil.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="132">
+              <caret line="19" column="37" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="37" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -110,8 +114,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/za/co/absa/africanacity/AbsaBillingExtract/util/BillingRecordFileWriter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="130">
-              <caret line="22" column="8" selection-start-line="22" selection-start-column="8" selection-end-line="22" selection-end-column="8" />
+            <state relative-caret-position="93">
+              <caret line="20" column="33" selection-start-line="20" selection-start-column="33" selection-end-line="20" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -119,8 +123,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="313">
-              <caret line="76" column="21" selection-start-line="76" selection-start-column="21" selection-end-line="76" selection-end-column="21" />
+            <state relative-caret-position="288">
+              <caret line="131" column="28" lean-forward="true" selection-start-line="131" selection-start-column="28" selection-end-line="131" selection-end-column="28" />
             </state>
           </provider>
         </entry>
@@ -134,6 +138,11 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>SIMPLE_DATE_FORMAT</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -144,10 +153,11 @@
         <option value="$PROJECT_DIR$/src/main/resources/data.sql" />
         <option value="$PROJECT_DIR$/src/test/java/TestCheckFirstBusinessDay.java" />
         <option value="$PROJECT_DIR$/src/main/java/za/co/absa/africanacity/AbsaBillingExtract/util/AbsaDateUtil.java" />
+        <option value="$PROJECT_DIR$/src/main/java/za/co/absa/africanacity/AbsaBillingExtract/util/AbsaFileUploadUtil.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/za/co/absa/africanacity/AbsaBillingExtract/service/impl/BillingExtratorServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/za/co/absa/africanacity/AbsaBillingExtract/util/BillingRecordFileWriter.java" />
         <option value="$PROJECT_DIR$/src/main/java/za/co/absa/africanacity/AbsaBillingExtract/schedular/AbsaBillingSchedular.java" />
+        <option value="$PROJECT_DIR$/src/main/java/za/co/absa/africanacity/AbsaBillingExtract/util/BillingRecordFileWriter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/za/co/absa/africanacity/AbsaBillingExtract/service/impl/BillingExtratorServiceImpl.java" />
       </list>
     </option>
   </component>
@@ -262,6 +272,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="extract.method.default.visibility" value="private" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
   </component>
   <component name="RunDashboard">
@@ -368,8 +379,8 @@
       <window_info id="Capture Tool" order="8" />
       <window_info id="Job Explorer" order="9" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.3280116" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3280116" />
+      <window_info active="true" anchor="bottom" id="Find" order="1" visible="true" weight="0.3280116" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3280116" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -449,13 +460,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="313">
-          <caret line="76" column="21" selection-start-line="76" selection-start-column="21" selection-end-line="76" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/za/co/absa/africanacity/AbsaBillingExtract/service/BillingExtratorService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="52">
@@ -473,24 +477,41 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/za/co/absa/africanacity/AbsaBillingExtract/service/impl/BillingExtratorServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/za/co/absa/africanacity/AbsaBillingExtract/util/AbsaFileUploadUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="51" column="43" lean-forward="true" selection-start-line="51" selection-start-column="43" selection-end-line="51" selection-end-column="43" />
+        <state relative-caret-position="132">
+          <caret line="19" column="37" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/za/co/absa/africanacity/AbsaBillingExtract/util/BillingRecordFileWriter.java">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="22" column="8" selection-start-line="22" selection-start-column="8" selection-end-line="22" selection-end-column="8" />
+        <state relative-caret-position="288">
+          <caret line="131" column="28" lean-forward="true" selection-start-line="131" selection-start-column="28" selection-end-line="131" selection-end-column="28" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/za/co/absa/africanacity/AbsaBillingExtract/schedular/AbsaBillingSchedular.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="236">
-          <caret line="47" column="27" selection-start-line="47" selection-start-column="27" selection-end-line="47" selection-end-column="27" />
+        <state relative-caret-position="301">
+          <caret line="52" column="19" lean-forward="true" selection-start-line="52" selection-start-column="19" selection-end-line="52" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/za/co/absa/africanacity/AbsaBillingExtract/util/BillingRecordFileWriter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="93">
+          <caret line="20" column="33" selection-start-line="20" selection-start-column="33" selection-end-line="20" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/za/co/absa/africanacity/AbsaBillingExtract/service/impl/BillingExtratorServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="55" column="75" selection-start-line="55" selection-start-column="75" selection-end-line="55" selection-end-column="75" />
         </state>
       </provider>
     </entry>

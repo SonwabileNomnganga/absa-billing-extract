@@ -3,6 +3,7 @@ C:\Users\C818138\absa\absa-billing-extract\src\main\java\za\co\absa\africanacity
 C:\Users\C818138\absa\absa-billing-extract\src\main\java\za\co\absa\africanacity\AbsaBillingExtract\service\BillingExtratorService.java
 C:\Users\C818138\absa\absa-billing-extract\src\main\java\za\co\absa\africanacity\AbsaBillingExtract\AbsaBillingExtractorApplication.java
 C:\Users\C818138\absa\absa-billing-extract\src\main\java\za\co\absa\africanacity\AbsaBillingExtract\util\AbsaDateUtil.java
+C:\Users\C818138\absa\absa-billing-extract\src\main\java\za\co\absa\africanacity\AbsaBillingExtract\util\AbsaFileUploadUtil.java
 C:\Users\C818138\absa\absa-billing-extract\src\main\java\za\co\absa\africanacity\AbsaBillingExtract\util\BillingRecordFileWriter.java
 C:\Users\C818138\absa\absa-billing-extract\src\main\java\za\co\absa\africanacity\AbsaBillingExtract\domain\Billing.java
 C:\Users\C818138\absa\absa-billing-extract\src\main\java\za\co\absa\africanacity\AbsaBillingExtract\domain\BillingFileRecord.java

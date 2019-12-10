@@ -45,7 +45,7 @@ public class AbsaBillingSchedular {
      *
      * @throws Exception
      */
-    @Scheduled(cron = "0 10 9 * * *")
+    @Scheduled(cron = "0 11 12 * * *")
     public void schedule() throws Exception{
 
         String scheduledDate = new SimpleDateFormat(FULL_DATE_FORMAT).format(new Date());
