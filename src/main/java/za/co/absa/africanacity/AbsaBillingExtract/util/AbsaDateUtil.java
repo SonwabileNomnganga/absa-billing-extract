@@ -30,16 +30,16 @@ public class AbsaDateUtil {
         }
     }
 
-    public static final String MRS_DATE_FORMAT = "yyyyMMdd";
+    public static final String SHORT_DATE_FORMAT = "yyyyMMdd";
     public static final String SUNDAY = "SUNDAY";
     public static final String SATURDAY = "SATURDAY";
     public static final String DAY_OF_THE_WEEK_FORMAT = "EEEE";
     public static final String MONTH_DAY_FORMAT = "MMdd";
-    public static final String FINSWITCH_DATE_FORMAT = "yyyy-MM-dd";
+    public static final String LONG_DATE_FORMAT = "yyyy-MM-dd";
 
     public static String getFirstBusinessWorkingDay(String currentDate)throws Exception {
 
-        DateFormat dateFormat = new SimpleDateFormat(MRS_DATE_FORMAT);
+        DateFormat dateFormat = new SimpleDateFormat(SHORT_DATE_FORMAT);
         Date myDate = dateFormat.parse(currentDate);
         Calendar calendar = Calendar.getInstance();
         calendar.setTime(myDate);
@@ -48,14 +48,14 @@ public class AbsaDateUtil {
 
         while(true) {
 
-            dateFormat = new SimpleDateFormat(MRS_DATE_FORMAT);
+            dateFormat = new SimpleDateFormat(SHORT_DATE_FORMAT);
             Date date = dateFormat.parse(dateFormat.format(nextDay));
 
             if(checkWeekends(dateFormat, date) || checkHolidays(dateFormat, date)) {
                 calendar.add(Calendar.DAY_OF_YEAR, + 1);
                 nextDay = calendar.getTime();
             } else {
-                return new SimpleDateFormat(FINSWITCH_DATE_FORMAT).format(nextDay);
+                return new SimpleDateFormat(LONG_DATE_FORMAT).format(nextDay);
             }
         }
     }

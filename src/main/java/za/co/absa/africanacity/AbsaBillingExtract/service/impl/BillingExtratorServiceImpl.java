@@ -46,10 +46,7 @@ public class BillingExtratorServiceImpl implements BillingExtratorService {
         List<Billing> filteredList = billingList
                 .parallelStream()
                 .filter(b -> {
-                    if (StringUtils.isNotBlank(b.getMessageStatus())) {
-                        return true;
-                    }
-                    return false;
+                    return StringUtils.isNotBlank(b.getMessageStatus());
                 })
                 .collect(Collectors.toList());
 

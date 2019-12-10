@@ -21,7 +21,7 @@ public class AbsaBillingSchedular {
     private BillingExtratorService service;
 
     /**
-     * @Scheduled(cron = "0 0 7 1 * ?")
+     * Scheduled(cron = "0 0 7 1 * ?")
      * The cron value above would start the the scheduler at 7:00 am on 1ST day of every month. Because the cron does not
      * know of holidays and weekends, the java code was added as a extra to make sure that the billing extract date recorded on the file is the legitimate
      * next business working day. To explain that see the discussion below as there will be different conditions to look for, e.g.
@@ -42,10 +42,9 @@ public class AbsaBillingSchedular {
      *
      * For demonstration purposes, the cron will be scheduled to run every 30 seconds
      *
-     *
      * @throws Exception
      */
-    @Scheduled(cron = "0 11 12 * * *")
+    @Scheduled(cron = "0 48 13 * * *")
     public void schedule() throws Exception{
 
         String scheduledDate = new SimpleDateFormat(FULL_DATE_FORMAT).format(new Date());
