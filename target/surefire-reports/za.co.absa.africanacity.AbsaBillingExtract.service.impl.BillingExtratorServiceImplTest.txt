@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: za.co.absa.africanacity.AbsaBillingExtract.service.impl.BillingExtratorServiceImplTest
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.29 s - in za.co.absa.africanacity.AbsaBillingExtract.service.impl.BillingExtratorServiceImplTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.209 s - in za.co.absa.africanacity.AbsaBillingExtract.service.impl.BillingExtratorServiceImplTest

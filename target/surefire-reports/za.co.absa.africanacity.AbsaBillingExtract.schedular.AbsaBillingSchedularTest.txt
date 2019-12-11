@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: za.co.absa.africanacity.AbsaBillingExtract.schedular.AbsaBillingSchedularTest
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.641 s - in za.co.absa.africanacity.AbsaBillingExtract.schedular.AbsaBillingSchedularTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.536 s - in za.co.absa.africanacity.AbsaBillingExtract.schedular.AbsaBillingSchedularTest

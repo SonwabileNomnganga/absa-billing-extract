@@ -20,23 +20,6 @@ public class BillingRecordFileWriter {
 
     public static void createBillingExtractFile(File file, List<Billing> billingList, String serviceName, String subServiceName, String firstBusinessWorkingDay) throws IOException, FFPojoException, ParseException {
 
-        /*FFPojoHelper ffpojo = FFPojoHelper.getInstance();
-
-        file.createNewFile();
-        BufferedWriter textFileWriter = new BufferedWriter(new FileWriter(file));
-        String currentRunDate = firstBusinessWorkingDay.replace("-", "");
-        for(Billing billing: billingList){
-
-            if(Integer.parseInt(billing.getDateTimeCreated().substring(5, 7)) == Integer.parseInt(currentRunDate.substring(4, 6)) -1) {
-
-                String line = ffpojo.parseToText(new BillingFileRecord(billing.getClientSwiftAddress(), serviceName, subServiceName, firstBusinessWorkingDay.replace("-", ""), billing.getMessageStatus()));
-                textFileWriter.write(line);
-                textFileWriter.newLine();
-            }
-        }
-        textFileWriter.close();*/
-
-
         FFPojoHelper ffpojo = FFPojoHelper.getInstance();
 
         file.createNewFile();
