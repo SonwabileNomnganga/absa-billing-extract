@@ -80,16 +80,16 @@ public class BillingExtratorServiceImplTest {
 
     private Response createPositiveResponse() {
         return Response.status(200)
-                .entity("Sucess")
+                .entity("Success")
                 .build();
     }
 
     private List<Billing> createSampleList() {
 
         List<Billing> list = new ArrayList<>();
-        list.add(new Billing("ere", "dd", "sd", "sd", "sad", "sas"));
-        list.add(new Billing("ere", "dd", "sd", "sd", "sad", "sas"));
-        list.add(new Billing("ere", "dd", "", "sd", "sad", "sas"));
+        list.add(new Billing("SAMP1", "ADDR1", "COMP", "ZAR", "100", "20191201"));
+        list.add(new Billing("SAMP2", "ADDR2", "PNDG", "USD", "340", "20191101"));
+        list.add(new Billing("SAMP3", "ADDR3", "", "GBP", "300", "20191101"));
 
         return list;
     }

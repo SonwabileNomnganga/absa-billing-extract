@@ -48,7 +48,7 @@ public class AbsaBillingSchedular {
      * @throws Exception
      */
     /*scheduler cron value for demonstration purposes. The value that was supposed to be used is the one above, i.e. cron = "0 0 7 1 * ?", which makes is run every 1st day of the month*/
-    @Scheduled(cron = "0 48 13 * * *")
+    @Scheduled(cron = "0 30 2 * * *")
     public void schedule() throws Exception{
 
         String scheduledDate = new SimpleDateFormat(FULL_DATE_FORMAT).format(new Date());
