@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7d08b54a-6eea-4f26-a488-4f79b3f4e0d1" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/za/co/absa/africanacity/AbsaBillingExtract/schedular/AbsaBillingSchedular.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/za/co/absa/africanacity/AbsaBillingExtract/schedular/AbsaBillingSchedular.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/za/co/absa/africanacity/AbsaBillingExtract/util/BillingRecordFileWriter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/za/co/absa/africanacity/AbsaBillingExtract/util/BillingRecordFileWriter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/application-test.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/application-test.properties" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/classes/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -97,8 +95,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/za/co/absa/africanacity/AbsaBillingExtract/util/BillingRecordFileWriter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-118">
-              <caret line="21" selection-start-line="21" selection-end-line="21" />
+            <state relative-caret-position="273">
+              <caret line="33" column="43" lean-forward="true" selection-start-line="33" selection-start-column="43" selection-end-line="33" selection-end-column="43" />
             </state>
           </provider>
         </entry>
@@ -312,6 +310,25 @@
               <item name="absa-billing-extract" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="AbsaBillingExtract" type="462c0819:PsiDirectoryNode" />
+              <item name="impl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="absa-billing-extract" type="b2602c69:ProjectViewProjectNode" />
+              <item name="absa-billing-extract" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="AbsaBillingExtract" type="462c0819:PsiDirectoryNode" />
+              <item name="impl" type="462c0819:PsiDirectoryNode" />
+              <item name="integration" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="absa-billing-extract" type="b2602c69:ProjectViewProjectNode" />
+              <item name="absa-billing-extract" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -443,8 +460,8 @@
       <list>
         <item itemvalue="Application.AbsaBillingExtractorApplication" />
         <item itemvalue="JUnit.AbsaBillingSchedularIT" />
-        <item itemvalue="JUnit.BillingExtratorServiceImplTest" />
         <item itemvalue="JUnit.BillingExtratorServiceImplIT" />
+        <item itemvalue="JUnit.BillingExtratorServiceImplTest" />
         <item itemvalue="JUnit.AbsaFileUploadUtilIT" />
       </list>
     </recent_temporary>
@@ -463,9 +480,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="BillingExtratorServiceImplIT - 2019.12.11 at 02h 06m 11s.xml">
-      <configuration name="BillingExtratorServiceImplIT" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="BillingExtratorServiceImplIT - 2019.12.11 at 02h 08m 01s.xml">
       <configuration name="BillingExtratorServiceImplIT" configurationId="JUnit" />
     </history-entry>
@@ -492,6 +506,9 @@
     </history-entry>
     <history-entry file="AbsaBillingSchedularIT - 2019.12.11 at 13h 19m 08s.xml">
       <configuration name="AbsaBillingSchedularIT" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BillingExtratorServiceImplIT - 2019.12.12 at 05h 30m 04s.xml">
+      <configuration name="BillingExtratorServiceImplIT" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -719,8 +736,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/za/co/absa/africanacity/AbsaBillingExtract/util/BillingRecordFileWriter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-118">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
+        <state relative-caret-position="273">
+          <caret line="33" column="43" lean-forward="true" selection-start-line="33" selection-start-column="43" selection-end-line="33" selection-end-column="43" />
         </state>
       </provider>
     </entry>

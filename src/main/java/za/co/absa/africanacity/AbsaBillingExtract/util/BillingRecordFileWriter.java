@@ -28,7 +28,8 @@ public class BillingRecordFileWriter {
         billingList
                 .parallelStream()
                 .filter(b -> {
-                    if(Integer.parseInt(b.getDateTimeCreated().substring(5, 7)) == Integer.parseInt(currentRunDate.substring(4, 6)) -1) {
+                    if(Integer.parseInt(b.getDateTimeCreated().substring(5, 7)) == Integer.parseInt(currentRunDate.substring(4, 6)) -1 &&
+                            b.getDateTimeCreated().substring(0, 4).equals(currentRunDate.substring(0,4))) {
 
                         String line = null;
                         try {
